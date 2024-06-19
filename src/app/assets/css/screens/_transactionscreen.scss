@@ -1,0 +1,23 @@
+.transaction-tab{
+    text-align: center;
+
+    .toggle{
+        background:$lightBG;
+        width: max-content;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 50px;
+        .button{
+            padding: 7px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            &.active{
+                background-color: $primaryDark;
+                color:white;
+            }
+        }
+    }
+}

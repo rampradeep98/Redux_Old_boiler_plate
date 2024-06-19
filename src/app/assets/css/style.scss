@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.date_input {
+    height: 50px;
+    margin-top: 3px;
+}
+
+.submit_btn {
+    width: 100%;
+    height: 50px;
+    background-color: #3C8486 !important;
+    display: block !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.submit_sec {
+    display: flex;
+    align-items: center;
+
+    .btn_submit {
+        width: 100px;
+        height: 50px;
+        background-color: #3C8486 !important;
+        display: block !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        margin-left: 10px;
+    }
+}
+
+.checbox_sec {
+    position: relative;
+
+    span {
+        display: block;
+        position: relative;
+        width: 150px;
+    }
+
+    input[type="checkbox"] {
+        width: 100%;
+        height: 47px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        left: 0;
+    }
+
+    .bg1 {
+        border: 1px solid #000000;
+        width: 100%;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #304e5e;
+            border: 1px solid #304e5e;
+            width: 100%;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 18px;
+            transition: .2s ease-in;
+        }
+    }
+
+    .bg2 {
+        background-color: #304e5e;
+        border: 1px solid #304e5e;
+        width: 100%;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+}
+
+.hide_icon_sec {
+    position: relative;
+
+    .icon_span {
+        position: absolute;
+        font-size: 24px;
+        top: 36%;
+        right: 2%;
+    }
+}
+
+@import "./inc/";
+@import "./components/";
+@import "./screens/";

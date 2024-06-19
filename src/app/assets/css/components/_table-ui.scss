@@ -1,0 +1,52 @@
+.custom-table-wrapper {
+    .MuiPaper-root {
+        background: white;
+        box-shadow: none;
+        height: 500px;
+    }
+
+
+
+    .MuiTablePagination-selectLabel,
+    .MuiTablePagination-displayedRows {
+        margin-bottom: 0;
+    }
+
+    .MuiIconButton-sizeMedium {
+        &:hover {
+            color: $primaryDark;
+        }
+    }
+
+    .MuiInputBase-input {
+        &.MuiInput-input {}
+    }
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation2.MuiPopover-paper.css-ubpweo-MuiPaper-root-MuiPopover-paper {
+    min-width: 160px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.MuiInput-underline input {
+
+    // background: #000;
+    :after {
+        border-color: $primaryDark !important;
+    }
+}
+
+.MuiTableCell-root.MuiTableCell-head {
+    span {
+        display: block;
+
+        button {
+            padding: 0;
+        }
+    }
+}
+
+
+// MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium

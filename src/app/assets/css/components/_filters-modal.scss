@@ -1,0 +1,109 @@
+.filter-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    background: white;
+    //height: 100vh;
+    // margin-top:-65px;
+    height: calc((100vh - 65px) * 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    // padding: 50px 25px;
+    box-shadow: $bgPrimaryWhiteShadowRight;
+    z-index: 10;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .5s ease all;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+    &.show {
+        opacity: 1;
+        transform: translateX(0);
+        width: 25%;
+    }
+
+    .filterModal-heading {
+        padding: 15px 25px;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .filterModal-control {
+            cursor: pointer;
+
+            svg {
+                font-size: 1.7rem;
+                color: $textBlackShade;
+            }
+        }
+
+        .filterModal-buttons {
+            width: 100%;
+            text-align: right;
+
+            button {
+                padding: 3px 15px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .filterModal-body {
+        padding: 15px 25px;
+
+        .filterModal-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            user-select: none;
+            padding: 10px 0;
+        }
+
+        .form-group .form-control {
+            padding: 0.6rem 0.5rem;
+        }
+
+        .filterModal-content {}
+    }
+}
+
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background: #00000054;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 10%;
+}
+
+.filter_btn {
+    background-color: #0a73d6 !important;
+    color: white !important;
+}
+
+.heading {
+    display: flex;
+
+
+    h4 {
+        margin-left: 48%;
+        margin-bottom: 0;
+    }
+
+
+    p {
+
+        margin-bottom: 0;
+        margin-left: auto;
+        width: max-content;
+    }
+
+    .period_heading {
+        font-weight: 600;
+        margin-left: auto;
+    }
+}

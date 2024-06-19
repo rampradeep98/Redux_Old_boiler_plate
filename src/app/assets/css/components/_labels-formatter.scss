@@ -1,0 +1,9 @@
+.label-chip{
+    padding: 4px 8px;
+    border-radius: 50px;
+    margin-right: 2px;
+    background-color: $lightBG;
+    &.active{
+        background-color: $primaryBG;
+    }
+}

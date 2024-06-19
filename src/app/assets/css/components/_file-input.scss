@@ -1,0 +1,51 @@
+.file-input {
+    .dropzone-container {
+        border: 1px solid blue;
+        padding: 25px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.375rem;
+
+        .dropzone {
+            cursor: pointer;
+
+            p {
+                margin-bottom: 0;
+                font-size: 0.8rem;
+                color: $textBlack;
+            }
+        }
+    }
+    .file-list{
+       margin-top: 25px;
+        .file-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .file-image{
+             
+                .file-img{
+                    height:50px;
+                    width:50px;
+                background:white;
+                border-radius: 10px;
+                border: 1px solid $textBlackShade;
+                margin-right: 10px;
+                padding:3px;
+
+                }
+            }
+            .file-content{
+                h3{
+                    font-size:.8rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

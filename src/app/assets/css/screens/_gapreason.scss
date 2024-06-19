@@ -1,0 +1,24 @@
+.view-table-gapReason {
+    margin-top: 10px;
+
+    .header-table {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card {
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .btn {
+        color: black
+    }
+
+    .table th,
+    .table td {
+        //border: 2px solid rgba(153, 149, 149, 0.877);
+        padding: 7PX 25px !important;
+    }
+}

@@ -1,0 +1,43 @@
+.btn{
+    border-radius: 50px;
+    padding: 10px 30px;
+    svg{
+        margin-right:5px;
+    }
+
+    &.custom-btn-primary{
+        background:$primaryDark;
+        color:white;
+        &.outline{
+            color:$primaryDark;
+            background:white;
+            border:1px solid $primaryDark;
+        }
+    }
+    &.custom-btn-danger{
+        background:tomato;
+        color:white;
+        &.outline{
+            color:tomato;
+            background:white;
+            border:1px solid tomato;
+        }
+    }
+    &.custom-btn-dark{
+        background:$primaryDark;
+        color:white;
+        &.outline{
+            color:$primaryDark;
+            background:white;
+            border:1px solid $primaryDark;
+        }
+    }
+    &.only-icon{
+        padding: 5px 10px;
+        margin-right: 3px;
+        svg{
+            margin-right: 0;
+        }
+    }
+}
+

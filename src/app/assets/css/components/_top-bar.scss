@@ -1,0 +1,210 @@
+.top-nav-bar {
+    height: 65px;
+    padding: 10px 25px;
+    background: #3c8486;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    box-shadow: 0px 3px 0px 0px lightgrey;
+
+    .profile {
+        position: relative;
+        min-width: 100px;
+        max-width: 200px;
+
+        .profile-option {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            cursor: pointer;
+            justify-content: flex-end;
+
+            img {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+            }
+
+            .name-content {
+                margin-right: 15px;
+
+                h3 {
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: white;
+                }
+
+
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 0.9rem;
+                    color: #d7d6d6;
+                }
+            }
+        }
+
+        .profile-drop-down {
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            box-shadow: 0px 2px 3px #eaeaea;
+            padding-bottom: 5px;
+            border-bottom: 5px solid $textBlack;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: .5s ease all;
+            margin-top: 10px;
+            transform: translateY(-900px);
+            opacity: 0;
+            z-index: -1;
+
+            &.show {
+                transform: translateY(0);
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .profile-menu {
+                .menu-item {
+                    .menu-content {
+                        padding: 5px 10px;
+
+                        .icon {
+                            svg {
+                                font-size: 0.8rem;
+
+                            }
+                        }
+
+                        .menu-title {
+                            h3 {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .notification {
+        position: relative;
+
+        .notification-option {
+
+            text-align: right;
+            padding-right: 20px;
+
+            .notification-icon {
+                cursor: pointer;
+                position: relative;
+
+                svg {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+
+                span {
+                    position: absolute;
+                    height: 5px;
+                    width: 5px;
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+                    transform: scale(1);
+                    animation: pulse 2s infinite;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .notification-drop-down {
+            position: absolute;
+            background-color: white;
+            width: 300px;
+            right: 0;
+            box-shadow: 0px 2px 3px #eaeaea;
+            padding-bottom: 5px;
+            border-bottom: 5px solid $textBlack;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: .5s ease all;
+            margin-top: 20px;
+            transform: translateY(-100%);
+            opacity: 0;
+            z-index: -10;
+            min-height: 100px;
+
+            &.show {
+                transform: translateY(0);
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .no-notifications {
+                display: flex;
+                height: 100px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-size: 0.8rem;
+                    color: $textBlackShade;
+                }
+            }
+
+        }
+    }
+
+    .settings {
+        position: relative;
+
+        .settings-option {
+
+            text-align: right;
+            padding-right: 20px;
+
+            .settings-icon {
+                cursor: pointer;
+                position: relative;
+
+                svg {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+
+                span {
+                    position: absolute;
+                    height: 5px;
+                    width: 5px;
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+                    transform: scale(1);
+                    animation: pulse 2s infinite;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}

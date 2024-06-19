@@ -1,0 +1,131 @@
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .login_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .form-group {
+      position: relative;
+
+      .icon_span {
+        position: absolute;
+        font-size: 24px;
+        top: 46%;
+        right: 2%;
+      }
+    }
+  }
+
+  .card-wrap {
+    border-radius: 40px;
+    background: #ffffff08;
+    border: 3px solid white;
+
+    .welcome-text {
+      h4 {
+        text-align: center;
+        padding-top: 50px;
+        color: #00999C;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      span {
+
+        font-size: 18px;
+        font-style: inherit;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline;
+      }
+
+    }
+
+
+
+    .form-container {
+
+      align-items: center;
+      width: 50%;
+      margin: 20px 150px;
+
+
+      margin-bottom: 20px;
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        // text-align: center;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      input {
+        // margin: 20px 0;
+        background: none;
+        border-radius: 15px;
+        box-shadow: none;
+        border: 1px solid gray;
+
+      }
+
+
+
+      .button-group {
+        align-items: center;
+        margin-top: 30px;
+
+        button {
+          // border: 2px solid rgb(220, 208, 208);
+          width: 100%;
+          border-radius: 20px;
+          color: #ffffff;
+          font-weight: 600;
+          background-color: #00999C;
+          box-shadow: none;
+
+          &:hover {
+            background-color: #00999C;
+          }
+        }
+
+      }
+
+    }
+
+    .login-images {
+      width: 100%;
+    }
+  }
+
+  .LoginFooter-container {
+    text-align: center;
+
+    p {
+
+      text-align: center;
+
+      a,
+      span {
+        cursor: pointer;
+        color: $primaryDark;
+        text-decoration: none;
+        transition: 0.2s ease all;
+
+        &:hover {
+          color: $primaryDarkShade;
+        }
+      }
+    }
+  }
+
+
+
+}

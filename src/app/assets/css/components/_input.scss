@@ -1,0 +1,15 @@
+.form-group {
+    margin-bottom: 10px;
+    label {
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        padding: calc(.5rem * 1.5) .5rem;
+
+        &:focus {
+            border-color: $primaryDark;
+            box-shadow: 0 0 0 0.25rem #304e5e40;
+        }
+    }
+}

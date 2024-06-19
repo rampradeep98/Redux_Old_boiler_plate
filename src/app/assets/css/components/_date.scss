@@ -1,0 +1,40 @@
+.date-picker-formate {
+    position: relative;
+
+    .date-formate {
+        width: 90%;
+        margin-bottom: 5px;
+
+        .time-icon {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 5px;
+                right: 15px;
+
+                svg {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .card {
+        z-index: 999999999999;
+        position: absolute;
+        box-shadow: 0px 0px 6px #00000045;
+        animation: 1s slideInAnimation ease;
+    }
+
+}
+
+@keyframes slideInAnimation {
+    from {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}

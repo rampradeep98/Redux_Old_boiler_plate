@@ -1,0 +1,158 @@
+.main-page {
+    background: white;
+    border-radius: 20px;
+    min-height: 650px;
+    padding-bottom: 10px;
+
+    .main-title {
+        padding: 5px 25px;
+        border-bottom: 1px solid #000;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+
+        .select-machine {
+            button {
+                padding: 1px 10px;
+            }
+        }
+
+        .component_btn_grp {
+
+            .btn {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 12px;
+                background-color: rgb(72, 69, 69);
+                border: 1px solid white;
+            }
+        }
+
+        .sidebar_btn {
+            background-color: rgb(72, 69, 69);
+            font-size: 12px;
+        }
+    }
+
+    .main-body {
+        padding: 10px 25px;
+    }
+
+    .copyright {
+        p {
+            text-align: center;
+            margin-bottom: 0;
+
+            span {
+                color: #C80028;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.exp-container {
+    .swal2-modal {
+        --animate-duration: .5s;
+        padding-left: 70px !important;
+        position: relative;
+
+        .exp-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: -15px;
+            left: 10px;
+
+            .swal2-icon-content {
+                font-size: 2rem;
+            }
+        }
+
+        .exp-title {
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+
+        .exp-htmlContainer {
+
+            text-align: left;
+
+            font-size: 0.8rem;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+
+        .exp-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            button {
+                font-size: 0.7rem;
+                padding: 5px 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.pdf_btn {
+    border: 1px solid #000000 !important;
+    margin-left: 10px !important;
+}
+
+.btn svg {
+    margin-right: 0px !important;
+}
+
+.execlbtn {
+    border: 1px solid #000000 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.modalclose-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0px !important;
+    border: 1px solid $textDark !important;
+    border-radius: 15% !important;
+    background-color: $textDark !important;
+    color: $textWhite !important;
+    position: absolute;
+    right: -34px;
+    top: 0;
+}
+
+
+.back_btn {
+
+    border: 1px solid #000000 !important;
+    font-size: 17px !important;
+}
+
+
+
+.handle-status {
+    margin-left: auto;
+    display: block;
+    width: max-content;
+}

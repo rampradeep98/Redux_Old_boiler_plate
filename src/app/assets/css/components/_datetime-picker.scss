@@ -1,0 +1,188 @@
+.date-picker {
+    // position: relative;
+
+    .date-time-formate {
+        width: 100%;
+        margin-bottom: 5px;
+
+        .time-icon {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 3px;
+                right: 10px;
+
+                svg {
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+    }
+
+    .card {
+        margin-top: 7px;
+        padding: 25px;
+        padding: 25px;
+        z-index: 999999999999;
+        position: absolute;
+        box-shadow: 0px 0px 6px #00000045;
+        animation: 1s slideInAnimation ease;
+        left: 50px;
+
+        .MuiGrid-root.MuiGrid-container.css-go2vvz-MuiGrid-root {
+            position: relative;
+            right: 55px;
+        }
+
+        .css-31ca4x-MuiPickersFadeTransitionGroup-root {
+            opacity: 4;
+            color: #4A4ACC;
+
+
+        }
+
+
+        svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiPickersCalendarHeader-switchViewIcon.css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+            display: none;
+        }
+
+        .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root {
+            font-weight: bold;
+            font-size: 0.86rem;
+            padding: 5px 0px;
+        }
+
+        .css-dplwbx-MuiPickersCalendarHeader-label {
+            margin-right: 6px;
+            font-size: 1.125rem;
+            font-weight: bold;
+            font-style: revert;
+            font-family: system-ui;
+        }
+
+        .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+            font-weight: bold;
+            font-size: 0.74rem;
+        }
+
+        .MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiPickersCalendarHeader-switchViewButton css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+            display: none;
+        }
+
+        .time-setting {
+            border-bottom: 0;
+            text-align: center;
+            font-size: 1.125rem;
+            height: auto;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .date_sec {
+            border-right: 1.5px solid rgba(0, 0, 0, 0.15)
+        }
+
+        .time_sec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5.5rem 1rem 0;
+
+            .form-group {
+                margin-right: 10px;
+
+                label {
+                    margin-bottom: 0.6rem;
+                }
+
+                input {
+                    width: 5.5rem;
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                input[type=number]::-webkit-inner-spin-button {
+                    opacity: 1;
+                    width: 10%;
+                }
+            }
+
+            .checkbox_row {
+                display: flex;
+                padding-top: 1.4rem;
+
+                .label1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #000000;
+                    background-color: transparent;
+                    width: 3rem;
+                    height: 2.75rem;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+
+                .label2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #000000;
+                    background-color: transparent;
+                    width: 3rem;
+                    height: 2.75rem;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+
+                input[type="radio"] {
+                    display: none;
+
+                }
+
+                .check1:checked+label {
+                    color: #fff;
+                    background-color: #4a4acc;
+                }
+
+                .check2:checked+label {
+                    color: #fff;
+                    background-color: #4a4acc;
+                }
+            }
+        }
+
+        .button-setting {
+            text-align: right;
+
+            button {
+                margin-top: 60px;
+                padding: 5px 15px;
+            }
+
+        }
+
+    }
+
+
+
+
+}
+
+
+@keyframes slideInAnimation {
+    from {
+        transform: translateY(-20px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}

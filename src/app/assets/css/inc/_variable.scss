@@ -1,0 +1,26 @@
+$text_black: #000000;
+$text_white: #ffffff;
+$app_background: #f9f9f9;
+$primary_color: #009a9f;
+$secondary_color: #727672;
+
+$primaryDark: #304e5e;
+$primaryDarkShade: #4c6e81;
+$primaryBG: $primaryDark;
+$primaryGradient: linear-gradient(
+  45deg,
+  $primaryDark 0%,
+  $primaryDarkShade 100%
+);
+
+$bgWhite: #fbfbfd;
+$bgWhiteShade: #f7f8fc;
+$bgPrimaryWhiteShadow: -10px 10px 17px #d9d9d9, 10px -10px 17px #e7e7e7;
+$bgPrimaryWhiteShadowRight: 1px 2px 3px #d9d9d9;
+$lightGrey: #b2b2b2;
+$lightBG: #00000014;
+
+$textBlack: #afb8c5;
+$textBlackShade: #8895a8;
+$textDark: #000000;
+$textWhite: #ffffff;

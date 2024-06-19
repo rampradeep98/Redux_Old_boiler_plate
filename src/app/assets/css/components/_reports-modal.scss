@@ -1,0 +1,54 @@
+.modalclose-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0px !important;
+  border: 1px solid $textDark !important;
+  border-radius: 15% !important;
+  background-color: $textDark !important;
+  color: $textWhite !important;
+  position: absolute;
+  right: -34px;
+  top: 0;
+}
+
+.header {
+  display: flex;
+}
+
+
+.planned {
+  color: rgb(145, 20, 20);
+  font-weight: bold;
+}
+
+.unPlanned {
+  color: rgb(9, 87, 9);
+  font-weight: bold;
+}
+
+
+
+.sideTitle {
+  display: flex;
+  margin-left: 73% !important;
+
+
+  .type {
+    font-weight: 700;
+  }
+
+  .RejectedReason {
+    color: rgb(145, 20, 20);
+    font-weight: bold;
+
+  }
+
+  .AcceptedReason {
+    color: green;
+    font-weight: bold;
+  }
+
+  .shift {
+    font-weight: 700;
+  }
+}

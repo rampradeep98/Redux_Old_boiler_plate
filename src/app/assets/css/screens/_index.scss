@@ -1,0 +1,71 @@
+@import './loginscreen';
+@import './transactionscreen';
+@import './register';
+@import './gapreason';
+@import './production_dashboard';
+@import './hourly_dashboard';
+@import './component';
+@import './machine-status';
+@import './home';
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-layout1 {
+  width: 100%;
+  overflow: hidden;
+
+  .content_layout {
+    height: 95vh;
+
+    .content-wrapper {
+      padding: 8px 8px;
+      position: relative;
+      height: 85vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.main-layout {
+  width: 90%;
+  overflow: hidden;
+
+  .content_layout {
+    height: 95vh;
+
+    .content-wrapper {
+      padding: 8px 8px;
+      position: relative;
+      height: 85vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 25px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: inset;
+  font-size: 12px;
+  background-color: #ffffff;
+
+  span {
+    color: #c70128;
+  }
+}
+
+.update-npt-form {
+  .button-class {
+    margin-top: 23px;
+  }
+}

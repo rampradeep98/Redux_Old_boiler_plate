@@ -1,0 +1,104 @@
+.register-screen {
+    width: 100%;
+    max-height: 100vh;
+    background-color: white;
+
+    .image-container {
+        width: 60%;
+        text-align: center;
+
+        .lf-player-container {
+            width: 590px;
+            margin-left: 100px;
+        }
+    }
+
+    .banner-content-container {
+        p {
+            background-color: #d4543d;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .right-container {
+        margin: 90px 20px;
+
+        .terms-link-container {
+            display: flex;
+            justify-content: center;
+
+            a,
+            span {
+                color: #b2b2b2;
+                text-decoration: none;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .form-container {
+            width: 60%;
+
+            margin: 0 auto;
+            padding: 0 25px;
+            position: relative;
+
+            &.login-page {
+                padding-top: 150px;
+            }
+
+            input {
+                border-radius: 15px;
+                border: 1px solid;
+
+            }
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: bold;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            .handlers-container {
+                text-align: center;
+                margin: 10px auto;
+
+                .middle-text {
+                    span {
+                        color: #b2b2b2;
+                    }
+                }
+            }
+
+        }
+
+        .footer-container {
+
+            text-align: center;
+
+            p {
+                margin-bottom: 10px;
+                text-align: center;
+
+                a,
+                span {
+                    cursor: pointer;
+                    color: $primaryDark;
+                    text-decoration: none;
+                    transition: 0.2s ease all;
+
+                    &:hover {
+                        color: $primaryDarkShade;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
